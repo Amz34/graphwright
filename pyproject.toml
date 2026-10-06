@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphwright"
+version = "0.1.0"
+description = "Build and query an explained knowledge graph of a Python codebase, using only the standard library."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+keywords = ["static-analysis", "knowledge-graph", "code-analysis", "ast", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.scripts]
+graphwright = "graphwright.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Amz34/graphwright"
+
+[tool.setuptools]
+packages = ["graphwright"]

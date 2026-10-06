@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.graphwright/
+graph.json
+out/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
